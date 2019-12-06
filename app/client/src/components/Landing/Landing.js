@@ -5,7 +5,7 @@ export class Landing extends Component {
     render() {
         return (
             <div>
-            
+                Dream 5
                 Landing page : Login
                 then navigate to dashboard after success.
             </div>
