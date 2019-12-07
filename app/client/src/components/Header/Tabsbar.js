@@ -1,92 +1,39 @@
-// import React from "react";
-// import PropTypes from "prop-types";
-// import { makeStyles } from "@material-ui/core/styles";
-// import Tabs from "@material-ui/core/Tabs";
-// import Tab from "@material-ui/core/Tab";
-// import Typography from "@material-ui/core/Typography";
-// import Box from "@material-ui/core/Box";
-// import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import React, { Component } from 'react'
+import 'antd/dist/antd.css';
+import { Tabs } from 'antd';
 
-// function TabPanel(props) {
-//   const { children, value, index, ...other } = props;
+export class Tabsbar extends Component {
+    render() {
+        const { TabPane } = Tabs;
+        
+        function callback(key) {
+            console.log(key);
+          }
 
-//   return (
-//     <Typography
-//       component="div"
-//       role="tabpanel"
-//       hidden={value !== index}
-//       id={`scrollable-prevent-tabpanel-${index}`}
-//       aria-labelledby={`scrollable-prevent-tab-${index}`}
-//       {...other}
-//     >
-//       {value === index && <Box p={3}>{children}</Box>}
-//     </Typography>
-//   );
-// }
 
-// TabPanel.propTypes = {
-//   children: PropTypes.node,
-//   index: PropTypes.any.isRequired,
-//   value: PropTypes.any.isRequired
-// };
+        return (
+            <div>
+                <Tabs defaultActiveKey="1" onChange={callback}>
+    <TabPane tab="Overview" key="1">
+    Overview page
+    </TabPane>
+    <TabPane tab="Statistics" key="2">
+    Statistics Page
+    </TabPane>
+    <TabPane tab="View Team" key="3">
+    View Team Page
+    </TabPane>
+    <TabPane tab="Fixtures" key="4">
+    Fixtures Page
+    </TabPane>
+    <TabPane tab="Fanstore" key="5">
+    Fanstore Page
+    </TabPane>
+  </Tabs>
+            </div>
+        )
+    }
+}
 
-// const theme = createMuiTheme({
-//   overrides: {
-//     MuiTabs: {
-//       indicator: {
-//         backgroundColor: "#513967"
-//       }
-//     }
-//   }
-// });
-// const useStyles = makeStyles({
-//   root: {
-//     flexGrow: 1,
-//     borderBottom: "1px solid #e8e8e8"
-//   }
-// });
+export default Tabsbar
 
-// export default function ScrollableTabsButtonPrevent() {
-//   const classes = useStyles();
-//   const [value, setValue] = React.useState(0);
-
-//   const handleChange = (event, newValue) => {
-//     setValue(newValue);
-//   };
-
-//   return (
-//     <MuiThemeProvider theme={theme}>
-//       <div>
-//       <div className={classes.root}>
-//         <Tabs
-//           value={value}
-//           onChange={handleChange}
-//           style={{ color: "#513967" }}
-//           centered
-//         >
-//           <Tab label="Overview" />
-//           <Tab label="Statistics" />
-//           <Tab label="View Team" />
-//           <Tab label="Fixtures" />
-//           <Tab label="Fanstore" />
-//         </Tabs>
-//         </div>
-//         <TabPanel value={value} index={0}>
-//           Overview page
-//         </TabPanel>
-//         <TabPanel value={value} index={1}>
-//           Statistics Page
-//         </TabPanel>
-//         <TabPanel value={value} index={2}>
-//           View Team Page
-//         </TabPanel>
-//         <TabPanel value={value} index={3}>
-//           Fixtures Page
-//         </TabPanel>
-//         <TabPanel value={value} index={4}>
-//           Fanstore Page
-//         </TabPanel>
-//       </div>
-//     </MuiThemeProvider>
-//   );
-// }

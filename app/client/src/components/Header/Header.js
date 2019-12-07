@@ -19,7 +19,8 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 2,
     textAlign : "initial",
-    fontStyle : "italic"
+    fontStyle : "italic",
+    color : "#ffffff"
   }
 }));
 
@@ -34,7 +35,7 @@ export default function Header() {
            Dream5
           </Typography>
           <Button color="inherit">
-          <AccountCircleIcon style={{padding: '8px'}}/>
+          <AccountCircleIcon style={{marginRight: '8px'}}/>
            Username
               </Button>
               <div style={{ borderRight: '0.11em solid white',
