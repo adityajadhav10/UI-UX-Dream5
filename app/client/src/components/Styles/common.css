@@ -1,0 +1,12 @@
+.alignMargin{
+    margin: 0px 16px 0px 16px !important;
+    padding : 16px 0px 8px 0px !important;
+    height: 39.8rem;
+}
+.cardTail{
+    height: 1%;
+    margin-left:24px ;
+    margin-right:24px ;
+    background-color:#E3CC32 !important;
+    border-radius: 2px;
+}
