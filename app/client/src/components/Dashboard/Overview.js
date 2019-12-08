@@ -21,7 +21,7 @@ const Overview = () => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <div className='alignMargin'>
+            <div className='boxForCard'>
                 <Grid container spacing={2} style={{height:'100%'}}>
                 <Grid item  xs={5}>
                     <Paper className={classes.paper} style={{height:'99%'}}>View Team</Paper>

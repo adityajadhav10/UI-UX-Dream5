@@ -1,9 +1,13 @@
 import React from 'react'
+import CardContainer from '../Styles/CardContainer';
 
 const ViewTeam = () => {
     return (
         <div>
-            View Team Page
+            <CardContainer>
+                View Team Page
+            </CardContainer>
+           
         </div>
     )
 }

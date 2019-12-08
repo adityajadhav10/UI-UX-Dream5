@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import CardContainer from '../Styles/CardContainer';
 
 const Statistics = props => {
     return (
-        <div>
+        <CardContainer>
             Statistics
-        </div>
+        </CardContainer>
     )
 }
 

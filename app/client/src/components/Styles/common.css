@@ -1,7 +1,7 @@
-.alignMargin{
+.boxForCard{
     margin: 0px 16px 0px 16px !important;
-    padding : 16px 0px 8px 0px !important;
-    height: 39.8rem;
+    padding : 16px 0px 0px 0px !important;
+    height: 39.1rem;
 }
 .cardTail{
     height: 1%;

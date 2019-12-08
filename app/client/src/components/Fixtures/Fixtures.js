@@ -1,11 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import CardContainer from '../Styles/CardContainer';
 
 const Fixtures = props => {
+    
     return (
         <div>
-            Fixtures Page
+            <CardContainer>
+                Fixtures
+            </CardContainer>
         </div>
+    
     )
 }
 

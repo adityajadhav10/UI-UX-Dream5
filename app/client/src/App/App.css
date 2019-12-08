@@ -36,3 +36,6 @@ html,body,App{
 .ant-tabs-ink-bar {
   background-color: #513967 !important;  
 }
+.ant-tabs-nav-container {
+ font-size: 16px !important;
+}
