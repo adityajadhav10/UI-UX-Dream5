@@ -7,6 +7,7 @@ const config = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'app.bundled.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -43,6 +44,7 @@ const config = {
     overlay: true,
     port: 4000,
     inline: true,
+    historyApiFallback: true,
     open: 'http://localhost:4000'
   },
 }

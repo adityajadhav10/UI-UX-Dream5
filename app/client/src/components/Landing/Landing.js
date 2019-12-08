@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
-import Header from "./../Header/Header"
+import React from 'react'
+import { Link } from 'react-router-dom';
 
-export class Landing extends Component {
-    render() {
-        return (
-            <div>
-                Dream 5
+const Landing = () => {
+    return (
+        <div>
+               <p> Dream 5
                 Landing page : Login
-                then navigate to dashboard after success.
-            </div>
-        )
-    }
+                then navigate to dashboard after success.</p>{"\n"}
+                <Link to="/dashboard"><button>Login</button></Link>
+        </div>
+    )
 }
 
 export default Landing
+

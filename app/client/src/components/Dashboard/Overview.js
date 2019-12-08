@@ -1,11 +1,11 @@
 import React from 'react'
 
-const ViewTeam = () => {
+const Overview = () => {
     return (
         <div>
-            View Team Page
+            Overview Page
         </div>
     )
 }
 
-export default ViewTeam
+export default Overview

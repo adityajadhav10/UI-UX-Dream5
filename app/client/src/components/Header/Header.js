@@ -7,6 +7,7 @@ import { Button, Divider } from '@material-ui/core';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import { fontFamily } from '@material-ui/system';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -44,7 +45,7 @@ export default function Header() {
                   height: '20px'
               }} />
          
-              <PowerSettingsNewIcon /> 
+         <Link to="/" style={{color: '#fff'}}><PowerSettingsNewIcon /> </Link>
         </Toolbar>
       </AppBar>
     </div>

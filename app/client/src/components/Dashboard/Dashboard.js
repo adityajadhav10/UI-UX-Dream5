@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Header from '../Header/Header'
+import Tabsbar from '../Header/Tabsbar'
 
-export class Dashboard extends Component {
-    render() {
-        return (
-            <div>
-                 <Header />
-            </div>
-        )
-    }
+const Dashboard = () => {
+    return (
+        <div>
+            <Header />
+            <Tabsbar />
+        </div>
+    )
 }
 
 export default Dashboard

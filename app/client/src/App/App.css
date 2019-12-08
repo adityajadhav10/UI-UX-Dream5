@@ -18,3 +18,16 @@ body {
   font-size: 14px;
   color: black;
 }
+
+.ant-tabs-nav .ant-tabs-tab:active {
+  color: #513967 !important;
+}
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: #513967 !important;
+}
+.ant-tabs-nav .ant-tabs-tab:hover {
+  color: #312551 !important;
+}
+.ant-tabs-ink-bar {
+  background-color: #513967 !important;  
+}
