@@ -34,7 +34,7 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './app/client/public/index.html',
-      favicon: './app/client/public/favicon.ico'
+      favicon: './app/client/public/dream5.ico'
     })
   ],
   devServer: {
