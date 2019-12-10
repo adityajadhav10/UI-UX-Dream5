@@ -1,3 +1,14 @@
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+
 .boxForCard{
     margin: 0px 16px 0px 16px !important;
     padding : 16px 0px 0px 0px !important;
@@ -9,4 +20,44 @@
     margin-right:24px ;
     background-color:#E3CC32 !important;
     border-radius: 2px;
+}
+
+.logoTitle {
+    flex-grow: 2;
+    text-align : center;
+    font-style : italic;
+    font-size: 32px;
+    color : #ffffff;
+    padding: 24px;
+    font-weight: bold;
+  }
+ 
+
+.main-container {
+    background-color: #513967 ;
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* height of your footer */
+}
+footer {
+    background-color: #312551 ;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex !important;
+}
+.btnPrimary1{
+    color : white !important;
+    background-color: #312551 !important;
+    border-radius: 2px;
+}
+.landingCard{
+    background-color: white;
+    height: 400px;
+    width: 50%;
+    border-radius: 8px;
+    margin-left: 330px;
 }
