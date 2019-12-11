@@ -6,8 +6,8 @@ import Typography from '@material-ui/core/Typography';
 import { Button, Divider } from '@material-ui/core';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
-import { fontFamily } from '@material-ui/system';
 import { Link } from 'react-router-dom';
+import './../Styles/common.css'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{ backgroundColor: '#513967' }}>
+      <AppBar position="static" className="navBarColor">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
            Dream5
