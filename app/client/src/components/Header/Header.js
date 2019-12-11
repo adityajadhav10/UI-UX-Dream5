@@ -33,7 +33,8 @@ export default function Header() {
       <AppBar position="static" className="navBarColor">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-           Dream5
+          <img src={require('./../../../public/dream5d.png')} height="40px" style={{paddingBottom:'8px',paddingRight:'6px'}}/>
+            Dream5
           </Typography>
           <Button color="inherit">
           <AccountCircleIcon style={{marginRight: '8px'}}/>

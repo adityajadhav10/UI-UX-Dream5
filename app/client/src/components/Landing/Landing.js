@@ -2,6 +2,8 @@ import React from 'react'
 import './../Styles/common.css'
 import 'antd/dist/antd.css';
 import UserAccount from './UserAccount';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 const Landing = () => {
     return (
@@ -21,9 +23,8 @@ const Landing = () => {
             
             </section>
             <footer>
-                <div className="leftAlignment">Follow us on :</div>
+                <div className="leftAlignment">Follow us on : <FacebookIcon className="facebookLogo"/> <InstagramIcon className="facebookLogo"/></div>
                 <div className="rightAlignment">ⓒ Copyright 2019</div>
-            
             </footer>
             </div> 
        

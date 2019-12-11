@@ -1,6 +1,6 @@
 import React from 'react'
 import $ from 'jquery';
-import { Button, Link } from '@material-ui/core';
+import { Button, Link, InputLabel } from '@material-ui/core';
 
 class UserAccount extends React.Component {
     componentDidMount() {
@@ -14,15 +14,21 @@ class UserAccount extends React.Component {
           <div class="login-page">
                 <div class="form">
                     <form class="register-form">
-                    <input type="text" placeholder="name"/>
-                    <input type="password" placeholder="password"/>
-                    <input type="text" placeholder="email address"/>
+                    <div style={{textAlign:'left',color:'#707070'}}><h3>Name :</h3></div>
+                    <input type="text" placeholder="Please enter your name"/>
+                    <div style={{textAlign:'left',color:'#707070'}}><h3>Email :</h3></div>
+                    <input type="text" placeholder="Please enter your email address"/>
+                    <div style={{textAlign:'left',color:'#707070'}}><h3>Password :</h3></div>
+                    <input type="password" placeholder="please enter your password"/>
+                    
                     <button>create</button>
                     <p class="message">Already registered? <a href="#">Sign In</a></p>
                     </form>
                     <form class="login-form">
-                    <input type="text" placeholder="username"/>
-                    <input type="password" placeholder="password"/>
+                    <div style={{textAlign:'left',color:'#707070'}}><h3>Email :</h3></div>
+                    <input type="text" placeholder="Please enter your email id here...."/>
+                    <div style={{textAlign:'left',color:'#707070'}}><h3>Password :</h3></div>
+                    <input type="password" placeholder="Please enter your email id here...."/>
                     <button>login</button>
                     <p class="message">Not registered? <a href="#">Create an account</a></p>
                     <div className="fieldForLogin">
@@ -33,7 +39,7 @@ class UserAccount extends React.Component {
                             <div style={{ 
                                 paddingTop: '12px',
                             }} />
-                    <Link href="/dashboard">  Google </Link> 
+                    <Link href="/dashboard"> Sign in with Google </Link> 
                     </div>
                     </form>
 

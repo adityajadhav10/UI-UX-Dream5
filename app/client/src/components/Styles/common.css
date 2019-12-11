@@ -9,9 +9,9 @@ body {
 }
 
 .navBarColor{
-    background: #42275a !important;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #513967, #42275a) !important;  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #513967, #42275a) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #42275a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #513967, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #513967, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .boxForCard{
@@ -83,9 +83,6 @@ footer {
     width :50%;
     text-align :right;
     padding-right :15px;
-}
-.fieldForLogin{
-    padding: 12px;
 }
 
   .login-form{
@@ -178,4 +175,8 @@ footer {
   }
   .container .info span .fa {
     color: #EF3B3A;
+  }
+  .facebookLogo{
+    margin-bottom: -6px;
+    margin-left: 4px;
   }
