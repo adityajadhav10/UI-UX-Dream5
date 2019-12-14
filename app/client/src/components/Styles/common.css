@@ -180,3 +180,31 @@ footer {
     margin-bottom: -6px;
     margin-left: 4px;
   }
+  .card-title{
+    color: #312551;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .table-header{
+    color: #838383;
+  }
+  .table-header-text{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .view-more-link{
+    color: #312551;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: right;
+    margin-left: 20%;
+  }
+  .table{
+    height: 1px;
+    margin: 0% 10% 0% 10%;
+  }
+

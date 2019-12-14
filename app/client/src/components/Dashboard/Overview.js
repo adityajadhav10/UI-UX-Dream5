@@ -3,6 +3,7 @@ import './../Styles/common.css'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import TeamStandingsOverviewPage from '../Standings/Team-Standings-Overview-Page';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -34,7 +35,9 @@ const Overview = () => {
                     <Paper className="cardTail" />
                 </Grid>
                 <Grid item xs={4}>
-                    <Paper className={classes.paper} style={{height:'99%'}}>Standings</Paper>
+                    <Paper className={classes.paper} style={{height:'99%'}}>
+                        <TeamStandingsOverviewPage></TeamStandingsOverviewPage>
+                    </Paper>
                     <Paper className="cardTail" />
                 </Grid>
                 </Grid>

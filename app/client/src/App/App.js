@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import Landing from '../components/Landing/Landing';
 import Dashboard from '../components/Dashboard/Dashboard';
+import TeamStandings from '../components/Standings/Team-Standings'
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
                 <Switch>
                     <Route exact path="/" component={Landing} />
                     <Route exact path="/dashboard" component={Dashboard} />
+                    <Route exact path="/team-standings" component={TeamStandings} />
                     <Redirect to="/" />
                 </Switch>
               </Router>
