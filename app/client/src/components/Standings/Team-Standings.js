@@ -6,6 +6,7 @@ import { Table } from 'antd';
 import 'antd/dist/antd.css';
 import { Link, Button } from '@material-ui/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import Header from '../Header/Header'
 
 class TeamStandings extends React.Component {
 
@@ -46,24 +47,33 @@ class TeamStandings extends React.Component {
             return (<div>Loading ...</div>)
         } else {
             return (
-                <CardContainer>
-                    <div className="card-title">
-                        <table width='90%'>
-                            <tr>
-                                <td><Link href="/dashboard"><ArrowBackIosIcon /></Link></td>
-                                <td>Team Standings</td>
-                                <td></td>
-                            </tr>
-                        </table>
+                <div>
+                    <Header />
+                    
+                    <div className="teamStandingsHeight">
+                    <div style={{paddingTop:'6px'}} />
+                            <CardContainer >
+                            <div className="card-title">
+                                <table width='90%'>
+                                    <tr>
+                                        <td><Link href="/dashboard"><ArrowBackIosIcon style={{paddingTop:'4px'}} /></Link></td>
+                                        <td><div className="cardTitle">Team Standings</div></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <Table dataSource={teams} className="table" size="middle">
+                                <Column title="Rank" dataIndex="rank" key="rank" />
+                                <Column title="User" dataIndex="user" key="user" />
+                                <Column title="Team Name" dataIndex="teamName" key="teamName" />
+                                <Column title="Game Week" dataIndex="gameWeek" key="gameWeek" />
+                                <Column title="Total" dataIndex="totalPoints" key="totalPoints" />
+                            </Table>
+                            </CardContainer>
                     </div>
-                    <Table dataSource={teams} className="table">
-                        <Column title="Rank" dataIndex="rank" key="rank" />
-                        <Column title="User" dataIndex="user" key="user" />
-                        <Column title="Team Name" dataIndex="teamName" key="teamName" />
-                        <Column title="Game Week" dataIndex="gameWeek" key="gameWeek" />
-                        <Column title="Total" dataIndex="totalPoints" key="totalPoints" />
-                    </Table>,
-                    </CardContainer>
+                    
+                </div>
+                
             )
         }
     }

@@ -180,14 +180,9 @@ footer {
     margin-bottom: -6px;
     margin-left: 4px;
   }
-  .card-title{
-    color: #312551;
-    font-family: "Roboto", sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-  }
+
   .table-header{
-    color: #838383;
+    color: #838383 !important;
   }
   .table-header-text{
     color: white;
@@ -202,6 +197,7 @@ footer {
     font-weight: 300;
     text-align: right;
     margin-left: 20%;
+    padding-right: 24px;
   }
   .table{
     height: 1px;
@@ -233,6 +229,24 @@ footer {
     font-size: 16px;
     padding: 24px;
   }
+  .ant-table table {
+    padding-left: 24px !important;
+    padding-top: 24px !important;
+    width : 95% !important;
+  }
+  .ant-table-pagination.ant-pagination {
+    margin: 18px 70px 24px !important;
+}
+  thead[class*="ant-table-thead"] th{
+    background-color: #838383 !important;
+    color: white !important;
+    font-size: 16px;
+  }
+  .teamStandingsHeight{
+    height: 44.1rem !important;
+    background-color: #312551;
+  }
+ 
 
 
 

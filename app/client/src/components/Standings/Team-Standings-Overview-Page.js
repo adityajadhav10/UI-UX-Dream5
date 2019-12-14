@@ -1,8 +1,9 @@
 import React from 'react'
 import '../Styles/common.css'
-import { Table } from 'antd';
+import { Table, Icon } from 'antd';
 import 'antd/dist/antd.css';
 import { Link, Button } from '@material-ui/core';
+
 
 class TeamStandingsOverviewPage extends React.Component {
     constructor(props) {
@@ -50,7 +51,7 @@ class TeamStandingsOverviewPage extends React.Component {
                         <Column title="Total" dataIndex="totalPoints" key="totalPoints" />
                     </Table>,
                     <div className="view-more-link">
-                        <Link href="/team-standings"> View More </Link>
+                        <Link href="/team-standings"> View More <Icon type="arrow-right" /> </Link>
                     </div>
                 </div>
             )
