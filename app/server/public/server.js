@@ -23,6 +23,10 @@ app.get('/api', (req, res)=> {
   
 });
 
+app.get('/team-standings', (req, res)=> {
+    res.send(require('./teamStandings.json'));
+});
+
 //POST request to server
 app.post('/api', (req, res)=> {
 
