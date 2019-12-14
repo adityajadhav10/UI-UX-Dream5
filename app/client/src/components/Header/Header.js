@@ -34,12 +34,12 @@ export default function Header() {
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
           <img src={require('./../../../public/dream5d.png')} height="40px" style={{paddingBottom:'8px',paddingRight:'6px'}}/>
-            Dream5
+            Dream<b style={{color:'#E3CC32'}}>5</b>
           </Typography>
           <Button color="inherit">
           <AccountCircleIcon style={{marginRight: '8px'}}/>
-           Username
-              </Button>
+           Kingsman
+           </Button>
               <div style={{ borderRight: '0.11em solid white',
                   padding: '8px',
                   marginRight: '18px',

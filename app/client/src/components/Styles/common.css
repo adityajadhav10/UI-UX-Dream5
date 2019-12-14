@@ -207,4 +207,34 @@ footer {
     height: 1px;
     margin: 0% 10% 0% 10%;
   }
+  .googleBtn{
+    height: 50.8px !important;
+    padding: 4px 74px 0px 75px !important;
+  }
+  .cardTitle{
+    font-size: 18px;
+    color: #312551;
+    font-weight: 600 ;
+  }
+  .teamFlag1{
+    height: 35px;
+    width: 70px;
+    background-color: #EF3B3A;
+    margin: 12px;
+  }
+  .teamFlag2{
+    height: 35px;
+    width: 70px;
+    background-color: blue;
+    margin: 12px;
+  }
+  .nextFixture{
+    display: inline-grid;
+    font-size: 16px;
+    padding: 24px;
+  }
+
+
+
+
 

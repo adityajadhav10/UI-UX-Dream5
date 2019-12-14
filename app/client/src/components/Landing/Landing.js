@@ -11,7 +11,7 @@ const Landing = () => {
             <section>
             <div variant="h6" className="logoTitle">
             <img src={require('./../../../public/dream5d.png')} height="50px" style={{paddingBottom:'8px',paddingRight:'6px'}}/>
-             Dream 5
+             Dream<b style={{color:'#E3CC32'}}>5</b>
                     </div>
                  
 

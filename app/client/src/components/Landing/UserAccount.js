@@ -1,6 +1,7 @@
 import React from 'react'
 import $ from 'jquery';
-import { Button, Link, InputLabel } from '@material-ui/core';
+import { Link } from '@material-ui/core';
+import { Icon, Button } from 'antd';
 
 class UserAccount extends React.Component {
     componentDidMount() {
@@ -32,14 +33,19 @@ class UserAccount extends React.Component {
                     <button>login</button>
                     <p class="message">Not registered? <a href="#">Create an account</a></p>
                     <div className="fieldForLogin">
-                        or
-                        <div style={{ borderBottom: '1px solid #777',
-                                padding: '8px',
+                    <div style={{ 
+                                paddingTop: '12px',
                             }} />
+                        or
                             <div style={{ 
                                 paddingTop: '12px',
                             }} />
-                    <Link href="/dashboard"> Sign in with Google </Link> 
+                         
+                     <Button href="/dashboard" size="large" className="googleBtn">
+                    
+                    <Icon type="google" style={{ fontSize: '18px',paddingRight:'8px' }} />Sign in with Google
+                   
+                    </Button> 
                     </div>
                     </form>
 
