@@ -13,7 +13,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '../../../build')));
-
+app.use(express.static(path.join('public')));
 app.get('/', (req, res)=> {
   res.send('Express server is up and running.');
 })
@@ -25,6 +25,10 @@ app.get('/api', (req, res)=> {
 
 app.get('/team-standings', (req, res)=> {
     res.send(require('./teamStandings.json'));
+});
+
+app.get('/player-statistics', (req, res)=> {
+    res.send(require('./playerStatistics.json'));
 });
 
 //POST request to server

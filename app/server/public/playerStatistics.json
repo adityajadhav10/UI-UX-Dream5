@@ -1,0 +1,51 @@
+[
+    {
+        "playerName": "Cristiano Ronaldo",
+        "goals": "100",
+        "assists": "300",
+        "cleanSheets": "10",
+        "teamLogo": "juventus.png"
+    },
+    {
+        "playerName": "Lionel Messi",
+        "goals": "95",
+        "assists": "310",
+        "cleanSheets": "9",
+        "teamLogo": "fcb.png"
+    },
+    {
+        "playerName": "Cristiano Ronaldo",
+        "goals": "100",
+        "assists": "300",
+        "cleanSheets": "10",
+        "teamLogo": "juventus.png"
+    },
+    {
+        "playerName": "Lionel Messi",
+        "goals": "95",
+        "assists": "310",
+        "cleanSheets": "9",
+        "teamLogo": "fcb.png"
+    },
+    {
+        "playerName": "Cristiano Ronaldo",
+        "goals": "100",
+        "assists": "300",
+        "cleanSheets": "10",
+        "teamLogo": "juventus.png"
+    },
+    {
+        "playerName": "Lionel Messi",
+        "goals": "95",
+        "assists": "310",
+        "cleanSheets": "9",
+        "teamLogo": "fcb.png"
+    },
+    {
+        "playerName": "Lionel Messi",
+        "goals": "95",
+        "assists": "310",
+        "cleanSheets": "9",
+        "teamLogo": "fcb.png"
+    }
+]
