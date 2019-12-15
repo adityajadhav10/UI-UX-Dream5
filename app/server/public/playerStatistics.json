@@ -1,51 +1,51 @@
 [
     {
-        "playerName": "Cristiano Ronaldo",
+        "playerName": "Vardy",
         "goals": "100",
         "assists": "300",
         "cleanSheets": "10",
-        "teamLogo": "juventus.png"
+        "teamLogo": "vardy.png"
     },
     {
-        "playerName": "Lionel Messi",
+        "playerName": "Aubameyang",
         "goals": "95",
         "assists": "310",
-        "cleanSheets": "9",
-        "teamLogo": "fcb.png"
+        "cleanSheets": "47",
+        "teamLogo": "Aubameyang.png"
     },
     {
-        "playerName": "Cristiano Ronaldo",
-        "goals": "100",
-        "assists": "300",
-        "cleanSheets": "10",
-        "teamLogo": "juventus.png"
+        "playerName": "Abraham",
+        "goals": "93",
+        "assists": "320",
+        "cleanSheets": "54",
+        "teamLogo": "abraham.png"
     },
     {
-        "playerName": "Lionel Messi",
-        "goals": "95",
+        "playerName": "Rashford",
+        "goals": "91",
+        "assists": "290",
+        "cleanSheets": "40",
+        "teamLogo": "rashford.png"
+    },
+    {
+        "playerName": "Salah",
+        "goals": "89",
+        "assists": "275",
+        "cleanSheets": "35",
+        "teamLogo": "Salah.png"
+    },
+    {
+        "playerName": "Mane",
+        "goals": "305",
         "assists": "310",
-        "cleanSheets": "9",
-        "teamLogo": "fcb.png"
+        "cleanSheets": "56",
+        "teamLogo": "Mane.png"
     },
     {
-        "playerName": "Cristiano Ronaldo",
-        "goals": "100",
-        "assists": "300",
-        "cleanSheets": "10",
-        "teamLogo": "juventus.png"
-    },
-    {
-        "playerName": "Lionel Messi",
-        "goals": "95",
+        "playerName": "Sterling",
+        "goals": "340",
         "assists": "310",
-        "cleanSheets": "9",
-        "teamLogo": "fcb.png"
-    },
-    {
-        "playerName": "Lionel Messi",
-        "goals": "95",
-        "assists": "310",
-        "cleanSheets": "9",
-        "teamLogo": "fcb.png"
+        "cleanSheets": "40",
+        "teamLogo": "Sterling.png"
     }
 ]
