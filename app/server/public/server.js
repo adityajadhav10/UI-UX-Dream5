@@ -31,6 +31,17 @@ app.get('/player-statistics', (req, res)=> {
     res.send(require('./playerStatistics.json'));
 });
 
+app.get('/getPlayerDetails', (req, res) => {
+  const playersData = require('./playerStatistics.json');
+  playersData.forEach(function (item, index) {
+    // console.log("--- ",item);
+    if(item.playerName === "Vardy") {
+      console.log("item, index   ",item);
+      //return;
+    }
+  });
+});
+
 //POST request to server
 app.post('/api', (req, res)=> {
 

@@ -2,16 +2,19 @@ import React from 'react'
 import CardContainer from '../Styles/CardContainer';
 import '../Styles/common.css'
 import { Table } from 'antd';
+import PlayerProfile from '../PlayerProfile/PlayerProfile';
 import 'antd/dist/antd.css';
+import { Modal, Button } from 'antd';
 
 class Statistics extends React.Component {
-
+    //state = { visible: false };
     constructor(props) {
         super(props);
         this.state = {
             error: null,
             isLoaded: false,
-            data: []
+            data: [],
+            visible: false
         };
     }
 
@@ -46,7 +49,31 @@ class Statistics extends React.Component {
     playerPopup(child) {
         // console.log('child === ', child);
         // Impl for popup details
+        alert('jj');
+        return (
+            <PlayerProfile></PlayerProfile>
+        );
     }
+
+    showModal() {
+        this.setState({
+          visible: true,
+        });
+      };
+    
+      handleOk() {
+        console.log(e);
+        this.setState({
+          visible: false,
+        });
+      };
+    
+      handleCancel() {
+        console.log(e);
+        this.setState({
+          visible: false,
+        });
+      };
 
     render() {
         const { error, isLoaded, data } = this.state;
@@ -60,6 +87,19 @@ class Statistics extends React.Component {
                 <div>
                         <CardContainer >
                             <div>
+                            <Button type="primary" onClick={this.showModal}>
+          Open Modal
+        </Button>
+        <Modal
+          title="Basic Modal"
+          visible={this.state.visible}
+          onOk={this.handleOk}
+          onCancel={this.handleCancel}
+        >
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+        </Modal>
                                 <div className="column">
                                     <Table dataSource={data} className="table" style={{ width: "90%"}}
                                         onRowClick={(details) => this.playerPopup(details)}
