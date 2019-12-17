@@ -2,32 +2,33 @@
     {
         "vardy" : {
             "position" : "Forward",
+            "picture" : "vardy_pic.png",
             "gameweek" : [
                 {
                     "gw": "1",
-                    "oppsition" : "WOL (0-0)",
+                    "opposition" : "WOL (0-0)",
                     "goals": "0",
                     "points": "2",
                     "assists": "0",
-                    "yelloCard": "0",
+                    "yellowCard": "0",
                     "redCard" : "0"
                 },
                 {
                     "gw": "2",
-                    "oppsition" : "CHE (1-1)",
+                    "opposition" : "CHE (1-1)",
                     "goals": "0",
                     "points": "2",
                     "assists": "0",
-                    "yelloCard": "0",
+                    "yellowCard": "0",
                     "redCard" : "0"
                 },
                 {
                     "gw": "3",
-                    "oppsition" : "SHU (1-2)",
+                    "opposition" : "SHU (1-2)",
                     "goals": "1",
                     "points": "8",
                     "assists": "0",
-                    "yelloCard": "0",
+                    "yellowCard": "0",
                     "redCard" : "0"
                 }
             ] 
