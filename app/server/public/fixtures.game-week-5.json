@@ -1,0 +1,127 @@
+{
+    "gameWeek": 5,
+    "data": {
+        "dates": [
+            {
+                "date": "Thursday, 19 December 2019",
+                "fixtures": [
+                    {
+                        "fixture_id": 1,
+                        "league_id": 1,
+                        "league": "English Premier League",
+                        "gameweek": "Gameweek 5",
+                        "fixture_date": "2019-12-19",
+                        "fixture_date_time": "2019-12-19T12:00:00+00:00",
+                        "fixture_timestamp": "12:00",
+                        "match_finished": true,
+                        "home_team": {
+                            "team_id": 1,
+                            "team_name": "Hoffenhiem",
+                            "logo": "tsgHoffenheim.png",
+                            "score": 1
+                        },
+                        "away_team": {
+                            "team_id": 2,
+                            "team_name": "Fortuna Dusseldorf",
+                            "logo": "fortunaDusseldorf.png",
+                            "score": 0
+                        }
+                    },
+                    {
+                        "fixture_id": 2,
+                        "league_id": 1,
+                        "league": "English Premier League",
+                        "gameweek": "Gameweek 5",
+                        "fixture_date": "2019-12-19",
+                        "fixture_date_time": "2019-12-19T19:00:00+00:00",
+                        "fixture_timestamp": "19:00",
+                        "match_finished": false,
+                        "home_team": {
+                            "team_id": 3,
+                            "team_name": "FC Koln",
+                            "logo": "fcKoln.png",
+                            "score": 0
+                        },
+                        "away_team": {
+                            "team_id": 4,
+                            "team_name": "Borussia Dortmund",
+                            "logo": "borussiaDortmund.png",
+                            "score": 0
+                        }
+                    },
+                    {
+                        "fixture_id": 3,
+                        "league_id": 1,
+                        "league": "English Premier League",
+                        "gameweek": "Gameweek 5",
+                        "fixture_date": "2019-12-19",
+                        "fixture_date_time": "2019-12-19T21:00:00+00:00",
+                        "fixture_timestamp": "21:00",
+                        "match_finished": false,
+                        "home_team": {
+                            "team_id": 5,
+                            "team_name": "City V",
+                            "logo": "cityV.png",
+                            "score": 0
+                        },
+                        "away_team": {
+                            "team_id": 6,
+                            "team_name": "United",
+                            "logo": "united.png",
+                            "score": 0
+                        }
+                    }
+                ]
+            },
+            {
+                "date": "Saturday, 21 December 2019",
+                "fixtures": [
+                    {
+                        "fixture_id": 4,
+                        "league_id": 1,
+                        "league": "English Premier League",
+                        "gameweek": "Gameweek 5",
+                        "fixture_date": "2019-12-21",
+                        "fixture_date_time": "2019-12-21T15:00:00+00:00",
+                        "fixture_timestamp": "15:00",
+                        "match_finished": false,
+                        "home_team": {
+                            "team_id": 7,
+                            "team_name": "FC Rangers",
+                            "logo": "fcRangers.png",
+                            "score": 1
+                        },
+                        "away_team": {
+                            "team_id": 8,
+                            "team_name": "United",
+                            "logo": "united.png",
+                            "score": 0
+                        }
+                    },
+                    {
+                        "fixture_id": 5,
+                        "league_id": 1,
+                        "league": "English Premier League",
+                        "gameweek": "Gameweek 5",
+                        "fixture_date": "2019-12-21",
+                        "fixture_date_time": "2019-12-21T18:00:00+00:00",
+                        "fixture_timestamp": "18:00",
+                        "match_finished": false,
+                        "home_team": {
+                            "team_id": 9,
+                            "team_name": "FC Cooper",
+                            "logo": "fcCooper.png",
+                            "score": 1
+                        },
+                        "away_team": {
+                            "team_id": 10,
+                            "team_name": "Tigers",
+                            "logo": "tigers.png",
+                            "score": 0
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
