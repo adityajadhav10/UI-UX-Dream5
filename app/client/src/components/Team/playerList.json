@@ -1,0 +1,72 @@
+[
+    {
+        "Kit No": 1,
+        "Name": "David de Gea",
+        "Position": "GK",
+        "Team": "Manchester United",
+        "Points": 20
+    },
+    {
+        "Kit No": 2,
+        "Name": "Allison",
+        "Position": "GK",
+        "Team": "Liverpool",
+        "Points": 7
+    },
+    {
+        "Kit No": 5,
+        "Name": "Otamendi",
+        "Position": "CB",
+        "Team": "Manchester City",
+        "Points": 32
+    },
+    {
+        "Kit No": 6,
+        "Name": "David Luiz",
+        "Position": "CB",
+        "Team": "Arsenal",
+        "Points": 47
+    },
+    {
+        "Kit No": 3,
+        "Name": "Vertonghen",
+        "Position": "CB",
+        "Team": "Tottenham",
+        "Points": 25
+    },
+    {
+        "Kit No": 4,
+        "Name": "Azpilicuetta",
+        "Position": "RB",
+        "Team": "Chelsea",
+        "Points": 4
+    },
+    {
+        "Kit No": 7,
+        "Name": "Sadio Mane",
+        "Position": "LWW",
+        "Team": "Liverpool",
+        "Points": 43
+    },
+    {
+        "Kit No": 8,
+        "Name": "Kevin de Bruyne",
+        "Position": "CAM",
+        "Team": "Manchester City",
+        "Points": 6
+    },
+    {
+        "Kit No": 9,
+        "Name": "Rashford",
+        "Position": "ST",
+        "Team": "Manchester United",
+        "Points": 13
+    },
+    {
+        "Kit No": 10,
+        "Name": "Salah",
+        "Position": "RW",
+        "Team": "Liverpool",
+        "Points": 16
+    }
+]
