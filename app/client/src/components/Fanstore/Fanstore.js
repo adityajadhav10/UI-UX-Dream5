@@ -6,7 +6,10 @@ const Fanstore = props => {
     return (
         <div>
              <CardContainer>
-             Coming Soon !!!
+                 <div className="cardTitle">
+                 Coming Soon !!!
+                 </div>
+             
              </CardContainer>
             
         </div>

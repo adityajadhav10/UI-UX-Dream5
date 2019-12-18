@@ -212,6 +212,14 @@ footer {
     color: #312551;
     font-weight: 600 ;
   }
+  .cardTitle2{
+    font-size: 18px;
+    margin: -16px;
+    height: 34px;
+    color: #312551;
+    background: white;
+    font-weight: 600;
+  }
   .teamFlag1{
     height: 35px;
     width: 70px;

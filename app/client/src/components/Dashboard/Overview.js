@@ -20,6 +20,7 @@ const useStyles = makeStyles(theme => ({
 
         height: 500,
         width: 450,
+        paddingTop: '24px'
     },
 
 }));
@@ -40,7 +41,7 @@ const Overview = () => {
                     <Grid item xs={5}>
                         <Paper className={classes.paper} style={{ height: '99%' }}>
                             <div className="cardTitle">
-                                View Team
+                                Your Team
                         </div>
                             <div>
                                 <div >
