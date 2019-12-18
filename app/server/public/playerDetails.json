@@ -204,7 +204,7 @@
         }
       ]
     },
-    "Sterling" : {
+    "sterling" : {
       "position": "Midfielder",
       "picture": "sterling_pic.png",
       "team": "Man City",
