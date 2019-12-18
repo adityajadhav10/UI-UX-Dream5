@@ -225,9 +225,13 @@ footer {
     margin: 12px;
   }
   .nextFixture{
-    display: inline-grid;
-    font-size: 16px;
+    display: inline-flex;
+    font-size: 18px;
     padding: 24px;
+  }
+  .locationFixture{
+    display: inline-flex;
+    font-size: 16px;
   }
   .ant-table table {
     padding-left: 24px !important;
@@ -259,3 +263,29 @@ footer {
     display: table;
     clear: both;
   }
+
+ .borderPoints{
+    font-size: 18px;
+    padding: 12px;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    margin: 24px;
+ }
+ .pointsBar{
+   display: inline-flex;
+   width:85%;
+ }
+.alignLeftPoints{
+    width: 30%;
+    padding: 12px;
+    font-size: 32px;
+    color: white;
+    height: 50%;
+    background-color: #42275a;
+}
+.alignRightPoints{
+  font-size: 18px;
+  padding: 12px;
+  margin-left: 12px;
+}
+
