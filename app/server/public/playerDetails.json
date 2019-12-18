@@ -1,40 +1,242 @@
 [
-    {
-        "vardy" : {
-            "position" : "Forward",
-            "picture" : "vardy_pic.png",
-            "gameweek" : [
-                {
-                    "gw": "1",
-                    "opposition" : "WOL (0-0)",
-                    "goals": "0",
-                    "points": "2",
-                    "assists": "0",
-                    "yellowCard": "0",
-                    "redCard" : "0"
-                },
-                {
-                    "gw": "2",
-                    "opposition" : "CHE (1-1)",
-                    "goals": "0",
-                    "points": "2",
-                    "assists": "0",
-                    "yellowCard": "0",
-                    "redCard" : "0"
-                },
-                {
-                    "gw": "3",
-                    "opposition" : "SHU (1-2)",
-                    "goals": "1",
-                    "points": "8",
-                    "assists": "0",
-                    "yellowCard": "0",
-                    "redCard" : "0"
-                }
-            ] 
+  {
+    "vardy": {
+      "position": "Forward",
+      "picture": "vardy_pic.png",
+      "team": "Leicester",
+      "gameweek": [
+        {
+          "gw": "1",
+          "opposition": "WOL (0-0)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
         },
-        "player 2" : {
-
+        {
+          "gw": "2",
+          "opposition": "CHE (1-1)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "3",
+          "opposition": "SHU (1-2)",
+          "goals": "1",
+          "points": "8",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
         }
+      ]
+    },
+    "aubameyang": {
+      "position": "Forward",
+      "picture": "aubameyang_pic.png",
+      "team": "Arsenal",
+      "gameweek": [
+        {
+          "gw": "1",
+          "opposition": "WOL (0-0)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "2",
+          "opposition": "CHE (1-1)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "3",
+          "opposition": "SHU (1-2)",
+          "goals": "1",
+          "points": "8",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        }
+      ]
+    },
+    "abraham" : {
+      "position": "Forward",
+      "picture": "abraham_pic.png",
+      "team": "Chelsea",
+      "gameweek": [
+        {
+          "gw": "1",
+          "opposition": "WOL (0-0)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "2",
+          "opposition": "CHE (1-1)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "3",
+          "opposition": "SHU (1-2)",
+          "goals": "1",
+          "points": "8",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        }
+      ]
+    },
+    "rashford" : {
+      "position": "Forward",
+      "picture": "rashford_pic.png",
+      "team": "Man Utd",
+      "gameweek": [
+        {
+          "gw": "1",
+          "opposition": "WOL (0-0)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "2",
+          "opposition": "CHE (1-1)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "3",
+          "opposition": "SHU (1-2)",
+          "goals": "1",
+          "points": "8",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        }
+      ]
+    },
+    "salah" : {
+      "position": "Midfielder",
+      "picture": "salah_pic.png",
+      "team": "Man Utd",
+      "gameweek": [
+        {
+          "gw": "1",
+          "opposition": "WOL (0-0)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "2",
+          "opposition": "CHE (1-1)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "3",
+          "opposition": "SHU (1-2)",
+          "goals": "1",
+          "points": "8",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        }
+      ]
+    },
+    "mane" : {
+      "position": "Midfielder",
+      "picture": "mane_pic.png",
+      "team": "Liverpool",
+      "gameweek": [
+        {
+          "gw": "1",
+          "opposition": "WOL (0-0)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "2",
+          "opposition": "CHE (1-1)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "3",
+          "opposition": "SHU (1-2)",
+          "goals": "1",
+          "points": "8",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        }
+      ]
+    },
+    "Sterling" : {
+      "position": "Midfielder",
+      "picture": "sterling_pic.png",
+      "team": "Man City",
+      "gameweek": [
+        {
+          "gw": "1",
+          "opposition": "WOL (0-0)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "2",
+          "opposition": "CHE (1-1)",
+          "goals": "0",
+          "points": "2",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        },
+        {
+          "gw": "3",
+          "opposition": "SHU (1-2)",
+          "goals": "1",
+          "points": "8",
+          "assists": "0",
+          "yellowCard": "0",
+          "redCard": "0"
+        }
+      ]
     }
+  }
 ]
