@@ -27,6 +27,13 @@ app.get('/team-standings', (req, res)=> {
     res.send(require('./teamStandings.json'));
 });
 
+app.get('/fixtures/', (req, res)=> {
+  var gameWeek = req.query.gameweek;
+  var jsonFileName = "./fixtures.game-week-" + gameWeek + ".json"
+  console.log(gameWeek)
+  res.send(require(jsonFileName));
+});
+
 //POST request to server
 app.post('/api', (req, res)=> {
 

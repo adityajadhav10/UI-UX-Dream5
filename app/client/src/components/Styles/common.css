@@ -237,7 +237,7 @@ footer {
   .ant-table-pagination.ant-pagination {
     margin: 18px 70px 24px !important;
 }
-  thead[class*="ant-table-thead"] th{
+  thead[class*="ant-table-thead"] th {
     background-color: #838383 !important;
     color: white !important;
     font-size: 16px;
@@ -245,6 +245,17 @@ footer {
   .teamStandingsHeight{
     height: 44.1rem !important;
     background-color: #312551;
+  }
+  .fixtures-table{
+    height: 1px;
+    margin: 0% 10% 0% 10%;
+    display: unset;
+  }
+  .ant-table-title{
+    background-color: #838383 !important;
+    color: white !important;
+    font-size: 16px;
+    margin: 0% 5% 0% 1%;
   }
  
 

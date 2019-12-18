@@ -1,0 +1,56 @@
+{
+    "gameWeek": 5,
+    "data": {
+        "dates": [
+            {
+                "date": "Thusday, 12 December 2019",
+                "fixtures": [
+                    {
+                        "fixture_id": 1,
+                        "league_id": 1,
+                        "league": "English Premier League",
+                        "gameweek": "Gameweek 4",
+                        "fixture_date": "2019-12-12",
+                        "fixture_date_time": "2019-12-15T12:00:00+00:00",
+                        "fixture_timestamp": "12:00",
+                        "match_finished": true,
+                        "home_team": {
+                            "team_id": 1,
+                            "team_name": "Manchester United",
+                            "logo": "tsgHoffenheim.png",
+                            "score": 1
+                        },
+                        "away_team": {
+                            "team_id": 2,
+                            "team_name": "Fortuna Dusseldorf",
+                            "logo": "fortunaDusseldorf.png",
+                            "score": 0
+                        }
+                    },
+                    {
+                        "fixture_id": 2,
+                        "league_id": 1,
+                        "league": "English Premier League",
+                        "gameweek": "Gameweek 4",
+                        "fixture_date": "2019-12-12",
+                        "fixture_date_time": "2019-12-15T15:00:00+00:00",
+                        "fixture_timestamp": "15:00",
+                        "match_finished": true,
+                        "home_team": {
+                            "team_id": 3,
+                            "team_name": "FC Koln",
+                            "logo": "fcKoln.png",
+                            "score": 3
+                        },
+                        "away_team": {
+                            "team_id": 4,
+                            "team_name": "Borussia Dortmund",
+                            "logo": "borussiaDortmund.png",
+                            "score": 2
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
