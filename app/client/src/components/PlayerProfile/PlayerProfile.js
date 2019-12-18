@@ -77,7 +77,7 @@ export default function PlayerProfileDialog(props) {
               <Column title="Goals" dataIndex="goals" key="goals" />
               <Column title="Points" dataIndex="points" key="points" />
               <Column title="Assists" dataIndex="assists" key="assists" />
-              <Column title="Yellow Card" dataIndex="yellowCard" key="yellowCard" /.>
+              <Column title="Yellow Card" dataIndex="yellowCard" key="yellowCard" />
               <Column title="Red Card" dataIndex="redCard" key="redCard" />
             </Table>
           </DialogContent>
