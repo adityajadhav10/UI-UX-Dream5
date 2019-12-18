@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
     avalPlayer: {
 
         height: 400,
-        width: 450,
+        width: 'auto',
         marginLeft: 30,
         marginRight: 20
     }
