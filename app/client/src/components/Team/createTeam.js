@@ -62,7 +62,7 @@ function intersection(a, b) {
 
 
 
-export default function CreateTeam() {
+export default function CreateTeam(props) {
 
 
 
@@ -111,6 +111,10 @@ export default function CreateTeam() {
         setChecked(not(checked, rightChecked));
     };
 
+
+    const onSubmitHandler = () => {
+        props.handler();
+    }
 
 
     const customList = PlayerList => (
@@ -186,11 +190,9 @@ export default function CreateTeam() {
                                     <br></br>
                                     <br></br>
                                     <Button
-
-                                        href="../dashboard"
+                                        onClick={() => {props.handler()}}
                                         variant="contained"
                                         color="primary"
-
                                     >
                                         Submit
                                     </Button>

@@ -6,6 +6,8 @@ import Grid from '@material-ui/core/Grid';
 import TeamStandingsOverviewPage from '../Standings/Team-Standings-Overview-Page';
 import Button from '@material-ui/core/Button';
 
+
+
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
@@ -27,27 +29,46 @@ const useStyles = makeStyles(theme => ({
 
 
 const Overview = () => {
-
-    const [isTeamPresent, setState] = React.useState(false);
-
+    const [isTeamPresent, setIsTeamPresent] = React.useState(false);
     const classes = useStyles();
+
+    React.useEffect(() => {
+        fetch("http://localhost:8000/team/status")
+          .then(res => res.json())
+          .then(
+            (result) => {
+                setIsTeamPresent(result.teamCreationStatus)
+            }
+          );
+      }, []);
+    
+    const getTeamPage = () => {
+        if (isTeamPresent) {
+            return(
+                <div>
+                    <div className="cardTitle">View Team</div>
+                    <div>
+                        <div >
+                            <img className={classes.image} src={require('../Team/lineup.png')} />
+                        </div>
+                    </div>
+                </div>
+            );
+        }else {
+            return (
+                <div> TEAM NOT VISIBLE </div>
+            );
+        }
+    
+    }
+
     return (
-
-
         <div className={classes.root}>
             <div className='boxForCard'>
                 <Grid container spacing={2} style={{ height: '100%' }}>
                     <Grid item xs={5}>
                         <Paper className={classes.paper} style={{ height: '99%' }}>
-                            <div className="cardTitle">
-                                View Team
-                        </div>
-                            <div>
-                                <div >
-                                    <img className={classes.image} src={require('../Team/lineup.png')} />
-                                </div>
-
-                            </div>
+                           {getTeamPage()}
                         </Paper>
                         <Paper className="cardTail" />
                     </Grid>

@@ -9,13 +9,29 @@ class Team extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isTeamPresent: true,
+            isTeamPresent: false,
         };
         this.handler = this.handler.bind(this)
     }
 
-    handler(isTeamPresent) {
-        this.setState({ isTeamPresent: !isTeamPresent });
+    handler() {
+        fetch("http://localhost:8000/team/status",
+            {
+                method: 'POST',
+            })
+        window.location.href = "http://localhost:4000/dashboard";
+    }
+
+    componentDidMount() {
+        fetch("http://localhost:8000/team/status")
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    this.setState({
+                        isTeamPresent: result.teamCreationStatus
+                    })
+                }
+            );
     }
 
     render() {
