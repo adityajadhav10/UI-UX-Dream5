@@ -48,7 +48,6 @@ body {
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 100px; /* height of your footer */
 }
 footer {
     background-color: #312551 ;
@@ -208,9 +207,17 @@ footer {
     padding: 4px 74px 0px 75px !important;
   }
   .cardTitle{
-    font-size: 18px;
+    font-size: 20px;
     color: #312551;
     font-weight: 600 ;
+  }
+  .cardTitle2{
+    font-size: 20px;
+    margin: -16px;
+    height: 34px;
+    color: #312551;
+    background: white;
+    font-weight: 600;
   }
   .teamFlag1{
     height: 35px;
@@ -247,7 +254,7 @@ footer {
     font-size: 16px;
   }
   .teamStandingsHeight{
-    height: 44.1rem !important;
+    height: 43.1rem !important;
     background-color: #312551;
   }
   .fixtures-table{

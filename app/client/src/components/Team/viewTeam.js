@@ -1,6 +1,6 @@
 import React from 'react'
 import './../Styles/common.css'
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withTheme } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Table from '@material-ui/core/Table';
@@ -22,15 +22,19 @@ const useStyles = makeStyles(theme => ({
         color: theme.palette.text.secondary
     },
     table: {
-        minWidth: 300
+        width: '750px',
+        marginTop: '24px',
+        marginLeft: '42px'
     },
-    image: {
-        marginLeft: 100,
-        height: 510,
-        width: 380,
+    image1: {
+        width: '420px',
+        paddingTop: '24px',
+        paddingBottom:'12px',
+        height: '481px'
     },
     button: {
-        marginLeft: 30,
+        color: '#fff',
+        backgroundColor:'#312551'
     }
 
 }));
@@ -69,10 +73,12 @@ const ViewTeam = () => {
                 <Grid container spacing={2} style={{ height: '100%' }}>
                     <Grid item xs={5}>
                         <Paper className={classes.paper} style={{ height: '99%' }}>
-                            <h1 >View Team</h1>
+                            <h2>View Team</h2>
                             <div >
-                                <img className={classes.image} src={require('../Team/lineup.png')} />
+                                <img className={classes.image1} src={require('../Team/lineup.png')} />
+                                <div>
                                 <Button href="/createTeam" className={classes.button}>Edit Team</Button>
+                                </div>
                             </div>
 
                         </Paper>
@@ -80,7 +86,7 @@ const ViewTeam = () => {
                         <Paper className="cardTail" />
                     </Grid>
                     <Grid item xs>
-                        <Paper className={classes.paper} style={{ height: '99%' }}>GameWeek Points
+                        <Paper className={classes.paper} style={{ height: '99%' }}><h2>Gameweek Points</h2>
                         <Table className={classes.table} aria-label="simple table">
                                 <TableHead>
                                     <TableRow>

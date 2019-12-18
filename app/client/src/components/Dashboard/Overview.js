@@ -22,6 +22,7 @@ const useStyles = makeStyles(theme => ({
 
         height: 500,
         width: 450,
+        paddingTop: '24px'
     },
 
 }));

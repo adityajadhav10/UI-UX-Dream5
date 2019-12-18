@@ -40,9 +40,7 @@ class Statistics extends React.Component {
 
   getHeader(title) {
     return (
-      <div className="card-title">
-        <div className="cardTitle">{title}</div>
-      </div>
+        <div className="cardTitle2">{title}</div>
     );
   }
 
