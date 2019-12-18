@@ -37,6 +37,15 @@ app.get('/player-statistics', (req, res)=> {
     res.send(require('./playerStatistics.json'));
 });
 
+app.get('/getPlayerDetails/:playerName', (req, res) => {
+    const playersData = require('./playerDetails.json');
+    playersData.forEach(function (item, index) {
+        if(item[req.params.playerName]) {
+            res.send(item[req.params.playerName]);
+        }
+    });
+});
+
 //POST request to server
 app.post('/api', (req, res)=> {
 
