@@ -32,19 +32,12 @@ app.get('/player-statistics', (req, res)=> {
 });
 
 app.get('/getPlayerDetails/:playerName', (req, res) => {
-  const playersData = require('./playerDetails.json');
-  console.log('rq === ',req.params.playerName);
-  playersData.forEach(function (item, index) {
-    console.log("--- ",item[req.params.playerName]);
-    if(item[req.params.playerName]) {
-      res.send(item[req.params.playerName]);
-    }
-    // if(item[req.params.playerName] === "vardy") {
-    //   console.log("item, index   ",item);
-    //   res.send([item]);
-    //   //return;
-    // }
-  });
+    const playersData = require('./playerDetails.json');
+    playersData.forEach(function (item, index) {
+        if(item[req.params.playerName]) {
+            res.send(item[req.params.playerName]);
+        }
+    });
 });
 
 //POST request to server
