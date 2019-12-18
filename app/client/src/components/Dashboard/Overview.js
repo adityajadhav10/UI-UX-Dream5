@@ -1,75 +1,94 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './../Styles/common.css'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import TeamStandingsOverviewPage from '../Standings/Team-Standings-Overview-Page';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: '#312551',
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary
-  },
+    root: {
+        flexGrow: 1,
+        backgroundColor: '#312551',
+    },
+    paper: {
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary
+    },
+    image: {
+
+        height: 500,
+        width: 450,
+    },
 
 }));
 
+
+
 const Overview = () => {
+
+    const [isTeamPresent, setState] = React.useState(false);
+
     const classes = useStyles();
     return (
+
+
         <div className={classes.root}>
             <div className='boxForCard'>
-                <Grid container spacing={2} style={{height:'100%'}}>
-                <Grid item  xs={5}>
-                    <Paper className={classes.paper} style={{height:'99%'}}>
-                    <div className="cardTitle">
-                        View Team 
+                <Grid container spacing={2} style={{ height: '100%' }}>
+                    <Grid item xs={5}>
+                        <Paper className={classes.paper} style={{ height: '99%' }}>
+                            <div className="cardTitle">
+                                View Team
                         </div>
+                            <div>
+                                <div >
+                                    <img className={classes.image} src={require('../Team/lineup.png')} />
+                                </div>
+
+                            </div>
                         </Paper>
-                    <Paper className="cardTail" />
-                </Grid>
-                <Grid item xs>
-                    <Paper className={classes.paper} style={{height:'48%'}}>
-                        <div>
-                        <div className="cardTitle">
-                            Next Fixture
+                        <Paper className="cardTail" />
+                    </Grid>
+                    <Grid item xs>
+                        <Paper className={classes.paper} style={{ height: '48%' }}>
+                            <div>
+                                <div className="cardTitle">
+                                    Next Fixture
                         </div>
 
-                        <div className="nextFixture">
-                            <div>United</div>
-                        
-                            <div className="teamFlag1" />
-                           <b style={{fontSize:"24px"}}>vs</b> 
-                           <div>City </div>
-                           
-                            <div className="teamFlag2" />
-                        </div>
-                        
-                        </div>
-                        
+                                <div className="nextFixture">
+                                    <div>United</div>
+
+                                    <div className="teamFlag1" />
+                                    <b style={{ fontSize: "24px" }}>vs</b>
+                                    <div>City </div>
+
+                                    <div className="teamFlag2" />
+                                </div>
+
+                            </div>
+
                         </Paper>
-                    <Paper className="cardTail" style={{marginBottom : '12px'}}/>
-                    <Paper className={classes.paper} style={{height:'48%'}}>
-                    <div className="cardTitle">
-                        Points
-                        </div>
-                        </Paper>
-                    <Paper className="cardTail" />
-                </Grid>
-                <Grid item xs={4}>
-                    <Paper className={classes.paper} style={{height:'99%'}}>
-                    <div className="cardTitle">
-                    <TeamStandingsOverviewPage></TeamStandingsOverviewPage>
+                        <Paper className="cardTail" style={{ marginBottom: '12px' }} />
+                        <Paper className={classes.paper} style={{ height: '48%' }}>
+                            <div className="cardTitle">
+                                Points
                         </div>
                         </Paper>
-                    <Paper className="cardTail" />
+                        <Paper className="cardTail" />
+                    </Grid>
+                    <Grid item xs={4}>
+                        <Paper className={classes.paper} style={{ height: '99%' }}>
+                            <div className="cardTitle">
+                                <TeamStandingsOverviewPage></TeamStandingsOverviewPage>
+                            </div>
+                        </Paper>
+                        <Paper className="cardTail" />
+                    </Grid>
                 </Grid>
-                </Grid>
-            </div>      
+            </div>
         </div>
     )
 }
