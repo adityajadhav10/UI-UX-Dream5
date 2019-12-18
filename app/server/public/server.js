@@ -13,7 +13,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '../../../build')));
-
+app.use(express.static(path.join('public')));
 app.get('/', (req, res)=> {
   res.send('Express server is up and running.');
 })
@@ -29,9 +29,12 @@ app.get('/team-standings', (req, res)=> {
 
 app.get('/fixtures/', (req, res)=> {
   var gameWeek = req.query.gameweek;
-  var jsonFileName = "./fixtures.game-week-" + gameWeek + ".json"
-  console.log(gameWeek)
+  var jsonFileName = "./fixtures.game-week-" + gameWeek + ".json";
   res.send(require(jsonFileName));
+});
+
+app.get('/player-statistics', (req, res)=> {
+    res.send(require('./playerStatistics.json'));
 });
 
 //POST request to server

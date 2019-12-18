@@ -40,15 +40,22 @@ const Overview = () => {
                         </div>
 
                         <div className="nextFixture">
-                            <div>United</div>
+                            <div style={{paddingRight:"18px"}}>United
                         
-                            <div className="teamFlag1" />
+                            <div className="teamFlag1" /> </div>
                            <b style={{fontSize:"24px"}}>vs</b> 
-                           <div>City </div>
+                           <div style={{paddingLeft:"18px"}}>City 
                            
-                            <div className="teamFlag2" />
+                            <div className="teamFlag2" /> </div>
                         </div>
+
+                        <div className="locationFixture">
+                            <div>
+                               <div style={{paddingBottom:"8px"}}> <i>Wembley , London</i> </div>
+                                <div style={{ border: "1px solid #707070",padding:"8px"}}><b>20 : 30 GMT</b></div>
+                             </div>
                         
+                        </div>
                         </div>
                         
                         </Paper>
@@ -57,6 +64,22 @@ const Overview = () => {
                     <div className="cardTitle">
                         Points
                         </div>
+
+                        <div className="borderPoints">
+                            Rising Stars
+                        </div>
+                        <div className="pointsBar">
+                                <div className="alignLeftPoints">
+                                    <div>100</div>
+                                    <div>Pts</div>
+                                </div>
+                                <div className="alignRightPoints">
+                                    <div style={{marginBottom:'8px'}}>Gameweek Rank : 1</div>
+                                    <div style={{marginBottom:'8px'}}>Gameweek No. : 19</div>
+                                    <div>Transfers : 1</div>
+                                </div>
+                        </div>
+                        
                         </Paper>
                     <Paper className="cardTail" />
                 </Grid>
