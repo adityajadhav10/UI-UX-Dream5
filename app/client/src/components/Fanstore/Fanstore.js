@@ -9,6 +9,9 @@ const Fanstore = props => {
                  <div className="cardTitle">
                  Coming Soon !!!
                  </div>
+                    <div >
+                        <img style={{paddingTop:'24px',height:'500px',width:'70%'}} src={require('../../../public/fanstore.jpg')} />
+                    </div>
              
              </CardContainer>
             
