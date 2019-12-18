@@ -67,7 +67,7 @@ class Statistics extends React.Component {
               ''}
             <div>
               <div className="column">
-                <Table dataSource={data} className="table" style={{ width: "90%" }}
+                <Table dataSource={data} className="table" style={{ width: "90%", cursor: 'pointer' }}
                   onRowClick={(details) => this.playerPopup(details)}
                   title={() => this.getHeader("Goals")}
                   pagination={false}>
@@ -86,7 +86,7 @@ class Statistics extends React.Component {
                 </Table>
               </div>
               <div className="column">
-                <Table dataSource={data} className="table" style={{ width: "90%" }}
+                <Table dataSource={data} className="table" style={{ width: "90%", cursor: 'pointer' }}
                   onRowClick={(details) => this.playerPopup(details)}
                   title={() => this.getHeader("Assists")}
                   pagination={false}>
@@ -105,7 +105,7 @@ class Statistics extends React.Component {
                 </Table>
               </div>
               <div className="column">
-                <Table dataSource={data} className="table"
+                <Table dataSource={data} className="table" style={{ cursor: 'pointer' }}
                   onRowClick={(details) => this.playerPopup(details)}
                   title={() => this.getHeader("Clean Sheets")}
                   pagination={false}>
