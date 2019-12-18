@@ -22,14 +22,15 @@ const useStyles = makeStyles(theme => ({
         color: theme.palette.text.secondary
     },
     table: {
-        minWidth: 300,
-        marginTop: '24px'
+        width: '750px',
+        marginTop: '24px',
+        marginLeft: '42px'
     },
     image1: {
         width: '420px',
         paddingTop: '24px',
         paddingBottom:'12px',
-        height: '460px'
+        height: '481px'
     },
     button: {
         color: '#fff',
@@ -72,7 +73,7 @@ const ViewTeam = () => {
                 <Grid container spacing={2} style={{ height: '100%' }}>
                     <Grid item xs={5}>
                         <Paper className={classes.paper} style={{ height: '99%' }}>
-                            <h1 >View Team</h1>
+                            <h2>View Team</h2>
                             <div >
                                 <img className={classes.image1} src={require('../Team/lineup.png')} />
                                 <div>
@@ -85,7 +86,7 @@ const ViewTeam = () => {
                         <Paper className="cardTail" />
                     </Grid>
                     <Grid item xs>
-                        <Paper className={classes.paper} style={{ height: '99%' }}><h1 >GameWeek Points</h1>
+                        <Paper className={classes.paper} style={{ height: '99%' }}><h2>Gameweek Points</h2>
                         <Table className={classes.table} aria-label="simple table">
                                 <TableHead>
                                     <TableRow>

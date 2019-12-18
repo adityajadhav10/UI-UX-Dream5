@@ -21,7 +21,8 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 2,
     textAlign : "initial",
     fontStyle : "italic",
-    color : "#ffffff"
+    color : "#ffffff",
+    fontSize: "22px"
   }
 }));
 
@@ -36,7 +37,7 @@ export default function Header() {
           <img src={require('./../../../public/dream5d.png')} height="40px" style={{paddingBottom:'8px',paddingRight:'6px'}}/>
             Dream<b style={{color:'#E3CC32'}}>5</b>
           </Typography>
-          <Button color="inherit">
+          <Button color="inherit" style={{fontSize: '16px'}}>
           <AccountCircleIcon style={{marginRight: '8px'}}/>
            Kingsman
            </Button>
@@ -46,7 +47,7 @@ export default function Header() {
                   height: '20px'
               }} />
          
-         <Link to="/" style={{color: '#fff'}}><PowerSettingsNewIcon /> </Link>
+         <Link to="/" style={{color: '#fff',marginTop: '4px',marginLeft: '6px'}}><PowerSettingsNewIcon /> </Link>
         </Toolbar>
       </AppBar>
     </div>
