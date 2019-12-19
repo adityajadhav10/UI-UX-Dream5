@@ -74,7 +74,7 @@ export default function CreateTeam(props) {
         ["Vardy", "Rashford", "Kevin de Bruyne", "Pogba", "Otamendi", "Virgil Van Dijk", "Hugo Lloris", "Ederson"]
     );
     const [right, setRight] = React.useState([]);
-
+    const [teamName, setTeamName] = React.useState('');
     const leftChecked = intersection(checked, left);
     const rightChecked = intersection(checked, right);
 
@@ -149,6 +149,13 @@ export default function CreateTeam(props) {
 
     );
 
+    const getTeamName = (enabled, label) => {
+        return(
+            <div>
+                <TextField id="standard-basic" disabled={enabled} label={label} value={teamName} onChange={(event)=> {setTeamName(event.target.value)}}></TextField>
+            </div>
+        );
+    }
 
     return (
         <div>
@@ -164,9 +171,7 @@ export default function CreateTeam(props) {
                                 <br></br>
                                 <br></br>
                                 <form>
-                                    <div>
-                                        <TextField id="standard-basic" label="Enter your team name"></TextField>
-                                    </div>
+                                    {getTeamName(false, "Enter your team name")}
                                 </form>
                                 <List component="nav" aria-label="main mailbox folders" >
                                     <ListItem button>
@@ -244,14 +249,17 @@ export default function CreateTeam(props) {
                                 <br></br>
                                 <br></br>
                                 <div className={classes.avalPlayer} >
+                                    {getTeamName(true, "Your team name")}
+                                    <br />
                                     {customList(right)}
                                     <br />
                                     <Button
                                         onClick={() => {props.handler()}}
-                                        disabled={right.length != 5 }
+                                        disabled={right.length != 5}
                                         variant="contained"
-                                        style={{color: '#fff',
-                                        backgroundColor:'#312551'}}>
+                                        style={right.length != 5 ?  
+                                            {color: '#fff', backgroundColor:'#d3d3d3'} :
+                                            {color: '#fff', backgroundColor:'#312551'}}>
                                         Submit
                                     </Button>
                                 </div>
