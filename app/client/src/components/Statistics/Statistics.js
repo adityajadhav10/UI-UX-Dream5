@@ -4,6 +4,7 @@ import '../Styles/common.css'
 import { Table } from 'antd';
 import 'antd/dist/antd.css';
 import PlayerProfileDialog from '../PlayerProfile/PlayerProfile';
+import { Icon } from 'antd';
 
 class Statistics extends React.Component {
   constructor(props) {
@@ -83,6 +84,8 @@ class Statistics extends React.Component {
                   <Column title="Goals" dataIndex="goals" key="goals"
                     sorter={(a, b) => a.goals - b.goals}
                     defaultSortOrder="descend" />
+                  <Column title="" key="icon" 
+                    render= {() => <Icon type="info-circle" />} />
                 </Table>
               </div>
               <div className="column">
@@ -102,6 +105,8 @@ class Statistics extends React.Component {
                   <Column title="Assists" dataIndex="assists" key="assists"
                     sorter={(a, b) => a.assists - b.assists}
                     defaultSortOrder="descend" />
+                  <Column title="" key="icon" 
+                    render= {() => <Icon type="info-circle" />} />
                 </Table>
               </div>
               <div className="column">
@@ -121,6 +126,8 @@ class Statistics extends React.Component {
                   <Column title="CS" dataIndex="cleanSheets" key="cleanSheets"
                     sorter={(a, b) => a.cleanSheets - b.cleanSheets}
                     defaultSortOrder="descend" />
+                  <Column title="" key="icon" 
+                    render= {() => <Icon type="info-circle" />} />
                 </Table>
               </div>
             </div>
