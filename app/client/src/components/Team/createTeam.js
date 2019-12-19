@@ -248,6 +248,7 @@ export default function CreateTeam(props) {
                                     <br />
                                     <Button
                                         onClick={() => {props.handler()}}
+                                        disabled={right.length != 5 }
                                         variant="contained"
                                         style={{color: '#fff',
                                         backgroundColor:'#312551'}}>
