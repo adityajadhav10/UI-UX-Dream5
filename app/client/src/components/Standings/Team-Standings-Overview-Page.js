@@ -49,7 +49,8 @@ class TeamStandingsOverviewPage extends React.Component {
                         <Column title="Rank" dataIndex="rank" key="rank" />
                         <Column title="Team Name" dataIndex="teamName" key="teamName" />
                         <Column title="Total" dataIndex="totalPoints" key="totalPoints" />
-                    </Table>,
+                    </Table>
+                    <br></br>
                     <div className="view-more-link">
                         <Link href="/team-standings"> View More <Icon type="arrow-right" /> </Link>
                     </div>

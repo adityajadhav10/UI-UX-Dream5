@@ -159,7 +159,7 @@ export default function CreateTeam(props) {
                 <div className='boxForCard'>
                     <Grid container spacing={2} style={{ height: '100%' }}>
                         <Grid item xs={3}>
-                            <Paper className={classes.paper} style={{ height: '99%' }}><h1>Create Team</h1>
+                            <Paper className={classes.paper} style={{ height: '99%' }}><h2>1. Create Team</h2>
                                 <br></br>
                                 <br></br>
                                 <br></br>
@@ -191,14 +191,6 @@ export default function CreateTeam(props) {
                                 <div>
                                     <br></br>
                                     <br></br>
-                                    <Button
-                                        onClick={() => {props.handler()}}
-                                        variant="contained"
-                                        style={{color: '#fff',
-                                        backgroundColor:'#312551'}}
-                                    >
-                                        Submit
-                                    </Button>
                                 </div>
                             </Paper>
 
@@ -206,7 +198,7 @@ export default function CreateTeam(props) {
                         </Grid>
 
                         <Grid item xs={4}>
-                            <Paper className={classes.paper} style={{ height: '99%' }} > <h1>Available Players</h1>
+                            <Paper className={classes.paper} style={{ height: '99%' }} > <h2>2. Available Players</h2>
                                 <p>(Select 5 players)</p>
                                 <div className={classes.avalPlayer}>
                                     {customList(left)}
@@ -248,13 +240,23 @@ export default function CreateTeam(props) {
 
                         </Grid>
                         <Grid item xs={4}>
-                            <Paper className={classes.paper} style={{ height: '99%' }}> <h1>Your team</h1>
+                            <Paper className={classes.paper} style={{ height: '99%' }}> <h2>3. Your team</h2>
                                 <br></br>
                                 <br></br>
                                 <div className={classes.avalPlayer} >
                                     {customList(right)}
+                                    <br />
+                                    <Button
+                                        onClick={() => {props.handler()}}
+                                        variant="contained"
+                                        style={{color: '#fff',
+                                        backgroundColor:'#312551'}}>
+                                        Submit
+                                    </Button>
                                 </div>
+                                
                             </Paper>
+
                             <Paper className="cardTail" />
                         </Grid>
 

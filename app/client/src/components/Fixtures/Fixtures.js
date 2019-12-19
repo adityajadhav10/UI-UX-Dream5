@@ -85,6 +85,7 @@ class Fixtures extends React.Component {
                 width: 600,
             }
         ]
+        
         if (error) {
             return (
                 <div>

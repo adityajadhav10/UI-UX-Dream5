@@ -71,7 +71,7 @@ export default function PlayerProfileDialog(props) {
               onRowClick={(details) => this.playerPopup(details)}
               pagination={false}>
 
-              <Column title="Name" dataIndex="gw" key="gw" />
+              <Column title="GW" dataIndex="gw" key="gw" />
               <Column title="Opposition" dataIndex="opposition" key="opposition"
                 defaultSortOrder="descend" />
               <Column title="Goals" dataIndex="goals" key="goals" />

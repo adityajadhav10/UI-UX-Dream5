@@ -48,7 +48,7 @@ const Overview = () => {
         if (isTeamPresent) {
             return(
                 <div>
-                    <div className="cardTitle">View Team</div>
+                    <div className="cardTitle">Rising Stars</div>
                     <div>
                         <div >
                             <img className={classes.image} src={require('../Team/lineup.png')} />
@@ -59,9 +59,9 @@ const Overview = () => {
         }else {
             return (
                 <div>
-                    <div className="cardTitle"> Go to Team Tab </div>
+                    <div className="cardTitle"> View Team </div>
                         <div style={{padding:'24px',fontSize:'18px'}}> 
-                            <Alert message=" Please create a new team" type="warning" />
+                            <Alert message=" Please create a new team in the Team Tab" type="warning" />
                         </div>
                     <div style={{fontSize:'150px',color:"#E3CC32"}}><Icon type="warning" /></div>
                 </div>
@@ -88,19 +88,18 @@ const Overview = () => {
                                 </div>
                                 <div className="alignRightPoints">
                                     <div style={{marginBottom:'8px'}}>Gameweek Rank : 1</div>
-                                    <div style={{marginBottom:'8px'}}>Gameweek No. : 19</div>
+                                    <div style={{marginBottom:'8px'}}>Gameweek No. : 5</div>
                                     <div>Transfers : 1</div>
                                 </div>
                         </div>
                </div>
-                        
             );
         } else {
             return(
                 <div>
-                <div className="cardTitle"> Go to Team Tab </div>
+                <div className="cardTitle">Points</div>
                     <div style={{padding:'24px',fontSize:'18px'}}> 
-                        <Alert message=" Please create a new team" type="warning" />
+                        <Alert message=" Please create a new team in the Team Tab" type="warning" />
                     </div>
                 <div style={{fontSize:'50px',color:"#E3CC32"}}><Icon type="warning" /></div>
                 </div>
