@@ -34,7 +34,8 @@ const useStyles = makeStyles(theme => ({
     },
     button: {
         margin: theme.spacing(0.5, 0),
-        backgroundColor: '#ffffff',
+        color: '#ffffff',
+        backgroundColor: '#E3CC32',
         width: 100,
         marginTop: 150
 
@@ -47,6 +48,7 @@ const useStyles = makeStyles(theme => ({
         marginLeft: 30,
         marginRight: 20
     }
+    
 
 }
 ));
@@ -192,7 +194,8 @@ export default function CreateTeam(props) {
                                     <Button
                                         onClick={() => {props.handler()}}
                                         variant="contained"
-                                        color="primary"
+                                        style={{color: '#fff',
+                                        backgroundColor:'#312551'}}
                                     >
                                         Submit
                                     </Button>
