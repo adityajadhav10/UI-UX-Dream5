@@ -85,7 +85,7 @@ class Statistics extends React.Component {
                     sorter={(a, b) => a.goals - b.goals}
                     defaultSortOrder="descend" />
                   <Column title="" key="icon" 
-                    render= {() => <Icon type="info-circle" />} />/>
+                    render= {() => <Icon type="info-circle" />} />
                 </Table>
               </div>
               <div className="column">
@@ -106,7 +106,7 @@ class Statistics extends React.Component {
                     sorter={(a, b) => a.assists - b.assists}
                     defaultSortOrder="descend" />
                   <Column title="" key="icon" 
-                    render= {() => <Icon type="info-circle" />} />/>
+                    render= {() => <Icon type="info-circle" />} />
                 </Table>
               </div>
               <div className="column">
@@ -127,7 +127,7 @@ class Statistics extends React.Component {
                     sorter={(a, b) => a.cleanSheets - b.cleanSheets}
                     defaultSortOrder="descend" />
                   <Column title="" key="icon" 
-                    render= {() => <Icon type="info-circle" />} />/>
+                    render= {() => <Icon type="info-circle" />} />
                 </Table>
               </div>
             </div>
