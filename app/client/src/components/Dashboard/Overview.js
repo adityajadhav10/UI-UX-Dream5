@@ -59,17 +59,54 @@ const Overview = () => {
         }else {
             return (
                 <div>
-                <div className="cardTitle"> Go to Team Tab </div>
-                <div style={{padding:'24px',fontSize:'18px'}}> 
-                <Alert message=" Please create a new team and submit" type="warning" />
-                </div>
-                <div style={{fontSize:'150px',color:"#E3CC32"}}><Icon type="warning" /></div>
+                    <div className="cardTitle"> Go to Team Tab </div>
+                        <div style={{padding:'24px',fontSize:'18px'}}> 
+                            <Alert message=" Please create a new team" type="warning" />
+                        </div>
+                    <div style={{fontSize:'150px',color:"#E3CC32"}}><Icon type="warning" /></div>
                 </div>
             );
         }
     
     }
 
+    const getPointsCard = () => {
+        if(isTeamPresent) {
+            return(
+               <div>
+                    <div className="cardTitle">
+                                Points
+                        </div>
+
+                        <div className="borderPoints">
+                            Rising Stars
+                        </div>
+                        <div className="pointsBar">
+                                <div className="alignLeftPoints">
+                                    <div>100</div>
+                                    <div>Pts</div>
+                                </div>
+                                <div className="alignRightPoints">
+                                    <div style={{marginBottom:'8px'}}>Gameweek Rank : 1</div>
+                                    <div style={{marginBottom:'8px'}}>Gameweek No. : 19</div>
+                                    <div>Transfers : 1</div>
+                                </div>
+                        </div>
+               </div>
+                        
+            );
+        } else {
+            return(
+                <div>
+                <div className="cardTitle"> Go to Team Tab </div>
+                    <div style={{padding:'24px',fontSize:'18px'}}> 
+                        <Alert message=" Please create a new team" type="warning" />
+                    </div>
+                <div style={{fontSize:'50px',color:"#E3CC32"}}><Icon type="warning" /></div>
+                </div>
+            );
+        }
+    }
     return (
         <div className={classes.root}>
             <div className='boxForCard'>
@@ -109,25 +146,7 @@ const Overview = () => {
                         </Paper>
                         <Paper className="cardTail" style={{ marginBottom: '12px' }} />
                         <Paper className={classes.paper} style={{ height: '48%' }}>
-                            <div className="cardTitle">
-                                Points
-                        </div>
-
-                        <div className="borderPoints">
-                            Rising Stars
-                        </div>
-                        <div className="pointsBar">
-                                <div className="alignLeftPoints">
-                                    <div>100</div>
-                                    <div>Pts</div>
-                                </div>
-                                <div className="alignRightPoints">
-                                    <div style={{marginBottom:'8px'}}>Gameweek Rank : 1</div>
-                                    <div style={{marginBottom:'8px'}}>Gameweek No. : 19</div>
-                                    <div>Transfers : 1</div>
-                                </div>
-                        </div>
-                        
+                            {getPointsCard()}
                         </Paper>
                         <Paper className="cardTail" />
                     </Grid>
