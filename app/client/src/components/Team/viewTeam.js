@@ -73,7 +73,7 @@ const ViewTeam = () => {
                 <Grid container spacing={2} style={{ height: '100%' }}>
                     <Grid item xs={5}>
                         <Paper className={classes.paper} style={{ height: '99%' }}>
-                            <h2>View Team</h2>
+                            <h2>Rising Stars</h2>
                             <div >
                                 <img className={classes.image1} src={require('../Team/lineup.png')} />
                                 <div>
