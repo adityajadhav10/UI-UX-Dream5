@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import TeamStandingsOverviewPage from '../Standings/Team-Standings-Overview-Page';
 import Button from '@material-ui/core/Button';
+import { Alert, Icon } from 'antd';
 
 
 
@@ -57,7 +58,13 @@ const Overview = () => {
             );
         }else {
             return (
-                <div> TEAM NOT VISIBLE </div>
+                <div>
+                <div className="cardTitle"> Go to Team Tab </div>
+                <div style={{padding:'24px',fontSize:'18px'}}> 
+                <Alert message=" Please create a new team and submit" type="warning" />
+                </div>
+                <div style={{fontSize:'150px',color:"#E3CC32"}}><Icon type="warning" /></div>
+                </div>
             );
         }
     
